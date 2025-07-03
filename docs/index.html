@@ -34,16 +34,28 @@
     </script>
     
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .pp-shadow {
-            box-shadow: 0 4px 6px -1px rgba(238, 186, 43, 0.1), 0 2px 4px -1px rgba(238, 186, 43, 0.06);
-        }
-        .hero-gradient {
-            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
-        }
-    </style>
+  /* ------------- Stili globali ------------- */
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #000;        /* nero pieno ovunque */
+    color: #fff;             /* testo di default bianco */
+  }
+
+  section {                  /* elimina gradienti residui */
+    background: transparent;
+  }
+
+  /* opzionale: se vuoi mantenere il gold nel testo/link */
+  .text-pp-gold { color: #EEBA2B; }
+
+  /* ombre custom rimangono uguali */
+  .pp-shadow {
+    box-shadow: 0 4px 6px -1px rgba(238,186,43,.1),
+                0 2px 4px -1px rgba(238,186,43,.06);
+  }
+</style>
+
 </head>
 
 <body class="bg-pp-black text-pp-text antialiased">
